@@ -1,0 +1,25 @@
+div.div_no_Display {     /* this will hide div with class div_class_name */
+    display:none;
+  }
+
+.float-container {
+    border: 3px solid #fff;
+    
+}
+
+.float-child {
+    width: 20%;
+    float: left;
+    
+    
+}  
+
+.float-child1 {
+    width: 80%;
+    float: left;
+    
+    
+}  
+.rcorners4 {
+    border-radius: 15px; background: #73AD21; padding: 20px; width: 200px; height: 150px;
+  }

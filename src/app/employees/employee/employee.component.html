@@ -1,0 +1,32 @@
+<h1 class="display-4">WeShare</h1>
+<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+  <input type="hidden" name="id" #id="ngModel" [(ngModel)]="service.formData.id">
+  <div class="from-group">
+    <input name="subject_name"  #subject_name="ngModel" [(ngModel)]="service.formData.subject_name" class="form-control" placeholder="Subject Name" required>
+    <div *ngIf="subject_name.invalid &#038;&#038; subject_name.touched" class="validation-error">This field is required.</div>
+  </div>
+  <div class="from-group">
+    <p>
+      
+    </p>
+  </div>
+  <div class="from-group">
+    <input name="subject_info"  #subject_name="ngModel" [(ngModel)]="service.formData.subject_info" class="form-control" placeholder="Subject Information" required>
+  </div>
+  <div class="from-group">
+    <p>
+      
+    </p>
+    </div>
+  <div class="from-group">
+    <input name="subjet_notes"  #subject_name="ngModel" [(ngModel)]="service.formData.subjet_notes" class="form-control" placeholder="Subject notes" required>
+  </div>
+  <div class="from-group">
+    <p>
+      
+    </p>
+    </div>
+  <div class="form-group">
+    <button type="submit" [disabled]="form.invalid" class="btn btn-lg btn-block btn-info">SUBMIT</button>
+  </div>
+</form>   

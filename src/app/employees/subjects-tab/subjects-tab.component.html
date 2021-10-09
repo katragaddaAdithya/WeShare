@@ -1,0 +1,14 @@
+<table class="table table-hover">
+    <thead>
+      <th>Subject Name</th>
+      <th></th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emp of list">
+        <td (click)="onEdit(emp)">{{emp.subject_name}}</td>
+
+      </tr>
+    </tbody>
+  </table>
+
+

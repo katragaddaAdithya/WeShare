@@ -1,0 +1,92 @@
+
+<div class={{displaylogin}} style="background-color:rgb(235, 214, 228); text-align:center;" >
+
+  <h1 style ="color:rgb(15, 15, 19);" > WeShare </h1>
+
+
+
+
+  
+  <input type="text"   [(ngModel)]="email" placeholder="Email" style="  border-radius: 8px; color:rgb(14, 11, 11); background-color:rgb(18, 200, 224); font-size:1.1em; border:0; margin:1em;"><br>
+  <input type="password"  [(ngModel)]="password" placeholder="password" style="  border-radius: 8px; color:rgb(14, 11, 11); background-color:rgb(18, 200, 224); font-size:1.1em; border:0; margin:1em;"><br>
+  <br>
+
+    
+ 
+
+  <button (click) ="signUp()" style="  padding:0.9em 2em; border-radius: 8px; color:rgb(14, 11, 11); background-color:rgb(18, 200, 224); font-size:1.1em; border:0; cursor:pointer; margin:1em;">Register</button>
+  <button (click) ="signIn()" style="  padding:0.9em 2em; border-radius: 8px; color:rgb(14, 11, 11); background-color:rgb(18, 200, 224); font-size:1.1em; border:0; cursor:pointer; margin:1em;">Login</button>
+  
+  <p>{{msg}}</p>
+
+
+
+
+
+</div>
+
+
+<div class={{displayapp}}>
+<div>
+  
+    <div style="background-color:rgb(18, 200, 224); text-align:left center; ">
+<h1 style ="color:rgb(15, 15, 19);" > WeShare </h1>
+
+<div style ="text-align:right "><button (click) = "Refresh()"  style="  padding:0.9em 2em; border-radius: 8px; color:rgb(14, 11, 11); background-color:rgb(18, 200, 224); font-size:1.1em; border:0; cursor:pointer; margin:1em;" >Log Out</button> </div>
+</div>
+<!--<div class="row">
+    <div class="col-md-5">
+      <app-employee></app-employee>
+    </div>
+    <div class="col-md-7">
+      <app-employee-list></app-employee-list>
+    </div>
+    
+     <div (click)="onclick()"class="col-md-7">
+        <app-subjects-tab></app-subjects-tab> 
+      </div>
+      <div class={{display}}>
+        <app-subjects-data></app-subjects-data> 
+      </div>
+      <div class={{display}}>
+      <div class="col-md-7">
+      <app-subjects-add-edit></app-subjects-add-edit>
+    </div>
+  </div>
+</div>
+</div>-->
+
+
+<div class="float-container">
+    <div class="float-child">
+        <div (click)="onclick()">
+            <app-subjects-tab></app-subjects-tab> 
+          </div>
+</div>
+<div class="float-child1">
+    <div class={{display}}>
+            <app-subjects-data></app-subjects-data> 
+           <div> <div style ="text-align:right "><button (click) = "onclickupdate()" class={{display}} style="  padding:0.9em 2em; border-radius: 8px; color:rgb(14, 11, 11); background-color:rgb(18, 200, 224); font-size:1.1em; border:0; cursor:pointer; margin:1em;" >Update</button> </div></div>
+          <div class={{updatedis}}></div> <div class={{deletesub}} style ="text-align:right "><button (click) = "onDelete(service.formData.id)"  style="  padding:0.9em 2em; border-radius: 8px; color:rgb(14, 11, 11); background-color:rgb(18, 200, 224); font-size:1.1em; border:0; cursor:pointer; margin:1em;" >Delete</button> </div>
+          </div>
+          <div class={{displayonupdate}}>
+          <div>
+         <!--<app-subjects-add-edit></app-subjects-add-edit>-->
+          <app-updatesubject></app-updatesubject>
+    </div>
+ </div>
+ <!--<div class={{updatebutton}} style ="text-align:right "><button (click) = "onclicaddsubject()"  style="  padding:0.9em 2em; border-radius: 8px; color:rgb(14, 11, 11); background-color:rgb(18, 200, 224); font-size:1.1em; border:0; cursor:pointer; margin:1em;" >Add Subject</button> </div>
+ -->
+ <div class={{displayaddsub}}>
+   <div>
+  </div>
+ 
+    <app-subjects-add-edit></app-subjects-add-edit>
+</div>
+</div>         
+</div>
+</div>
+<div class={{updatedis}} style ="text-align:right "><button (click) = "onclicaddsubject()"  style="  padding:0.9em 2em; border-radius: 8px; color:rgb(14, 11, 11); background-color:rgb(18, 200, 224); font-size:1.1em; border:0; cursor:pointer; margin:1em;" >Add Subject</button> </div>
+</div>
+
+         
