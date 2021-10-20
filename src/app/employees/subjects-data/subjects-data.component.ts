@@ -44,7 +44,9 @@ deletebuton ='div_no_Display';
     }
   
     onEdit(emp: Employee) {
+      console.error(this.service.formData.subjet_notes);
       this.service.formData = Object.assign({}, emp);
+      
     }
   
     onDelete(id: string) {

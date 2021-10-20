@@ -1,21 +1,21 @@
  
  <h4>Subject Details</h4>
-  <table class="table table-hover">
+  <table class="table">
     <thead>
       <th>Subject Name</th>
-      <th>Subject Info</th>
       <th>Subject Notes</th>
+      <th>Subject Info</th>
       <th></th>
       <th></th>
       <th></th>
     </thead>
     <tbody>
       <tr>
-        <td (click)="onEdit(service.formData)">{{service.formData.subject_name}}</td>
-        <td (click)="onEdit(service.formData)">{{service.formData.subject_info}}</td>
-        <td (click)="onEdit(service.formData)">{{service.formData.subjet_notes}}</td>
+        <td (click)="onEdit(service.formData)" style="width: 25%;">{{service.formData.subject_name}}</td>
+        <td (click)="onEdit(service.formData)"><a href={{service.formData.subjet_notes}} target="_blank">{{service.formData.subjet_notes}}</a></td>
+        <td (click)="onEdit(service.formData)" style="width: 40%;">{{service.formData.subject_info}}</td>
         <td><button   style="  padding:0.9em 2em; border-radius: 8px; color:rgb(14, 11, 11); background-color:rgb(18, 200, 224); font-size:1.1em; border:0; cursor:pointer; margin:1em;" >
-          <a href={{service.formData.subject_info}} target="_blank">
+          <a href={{service.formData.subjet_notes}} target="_blank">
             <div style="height:100%;width:100%">
             Download
             </div>

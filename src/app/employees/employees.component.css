@@ -10,8 +10,7 @@ div.div_no_Display {     /* this will hide div with class div_class_name */
 .float-child {
     width: 20%;
     float: left;
-    
-    
+    margin-top: 50px;
 }  
 
 .float-child1 {
@@ -23,3 +22,72 @@ div.div_no_Display {     /* this will hide div with class div_class_name */
 .rcorners4 {
     border-radius: 15px; background: #73AD21; padding: 20px; width: 200px; height: 150px;
   }
+* {
+    box-sizing: border-box;
+    min-height: max-content;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    padding: 10px;
+    height: 300px; 
+    margin-top: 100px;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .login{
+      margin-top: 10px;
+      border-radius: 10px 10px 10px 10px;
+      width: 36%;
+      text-align: center;
+  }
+  .register{
+    margin-top: 10px;
+      border-radius: 10px 10px 10px 10px;
+      width: 56%;
+      text-align: center;
+  }
+  .column{
+      text-align: center;
+      min-height: 90%;
+      height: fit-content;
+  }
+  .sign{
+      margin-top: 20px;
+      margin-left: 10px;
+      border-radius: 12px 12px 12px 12px;
+      width: 150px;
+  }
+  .welcome_content{
+      font-size: 16px;
+      font-weight: 500;
+      color: rgb(150, 149, 149);
+      margin-bottom: 70px;
+  }
+  .font_family{
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .up{
+      margin-bottom: 70px;
+  }
+  .in{
+      margin-top: 50px;
+  }
+  .title{
+    margin-left: 10px;
+    margin-top: -2px;
+    font-size: 38px;
+    font-weight: 600;
+    color: white;
+}
+.header_weshare{
+  background-color: rgba(0, 255, 255, 0.933);
+  height: 60px;
+  /*  */
+}
